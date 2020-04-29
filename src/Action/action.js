@@ -1,31 +1,36 @@
-export const addArticleToCard = (payload) => {
+export const addArticleToCard = payload => {
     return {
-        type : "ADD_ARTICLE",
-        payload
-    }
-}
-
-export const deleteArticle = (payload) => {
+      type: "ADD_ARTICLE",
+      payload
+    };
+  };
+  export const incrementQuantity = payload => {
     return {
-        type : "DELETE_ARTICLE",
-        payload
-    }
-}
-
-
-
-export const deleteAll = (payload) => {
+      type: "INCREMENT_QUANTITY",
+      payload
+    };
+  };
+  export const decrementQuantity = payload => {
     return {
-        type : "DELETE_ALL",
-        payload
-    }
-}
-
-export const search = (payload) => {
+      type: "DECREMENT_QUANTITY",
+      payload
+    };
+  };
+  export const deleteArticle = payload => {
     return {
-        type : "SEARCH_ARTICLE",
-        payload
-    }
-}
-
-
+      type: "DELETE_ARTICLE",
+      payload
+    };
+  };
+  export const deleteAll = payload => {
+    return {
+      type: "DELETE_ALL",
+      payload
+    };
+  };
+  export const search = payload => {
+    return {
+      type: "SEARCH_ARTICLE",
+      payload
+    };
+  };

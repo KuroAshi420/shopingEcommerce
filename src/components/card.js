@@ -11,13 +11,14 @@ function Card(props) {
           </div>
           <div className="card-desc">
             <span>{el.name}</span>
-            <span>{el.price}£</span>
+            <span>{el.price}$</span>
           </div>
           <button
             className="description-button"
             onClick={() =>
               props.addArticleToCard({
                 id: el.id,
+                quantity: el.quantity,
                 link: el.link,
                 name: el.name,
                 catégorie: el.catégorie,

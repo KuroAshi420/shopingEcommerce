@@ -1,4 +1,18 @@
-
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+.input {
+  width: 50%;
+  height: 40px;
+}
+.search-btn {
+  height: 46px;
+  width: 10%;
+}
 .card{
   height: 300px;
   width: 300px;
@@ -33,7 +47,7 @@ margin: 17px;
 .description-button{
   height: 50px;
   width: 130px;
-background-color: red;
+background-color: grey;
 border-radius: 5px;
 }
 
@@ -45,4 +59,14 @@ border-radius: 5px;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 30px 30px;
+}
+
+.affichage-panier{
+  display: flex;
+    justify-content: space-around;
+}
+.total{
+  display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
 }
